@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/ad_unit"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -16,7 +17,8 @@
         <com.facebook.ads.AdIconView
             android:id="@+id/native_ad_icon"
             android:layout_width="35dp"
-            android:layout_height="35dp" />
+            android:layout_height="35dp"
+            tools:ignore="MissingClass" />
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -30,7 +32,7 @@
                 android:ellipsize="end"
                 android:lines="1"
                 android:textColor="@android:color/black"
-                android:textSize="15sp" />
+                android:textSize="5sp" />
             <TextView
                 android:id="@+id/native_ad_sponsored_label"
                 android:layout_width="wrap_content"
@@ -38,7 +40,7 @@
                 android:ellipsize="end"
                 android:lines="1"
                 android:textColor="@android:color/darker_gray"
-                android:textSize="12sp" />
+                android:textSize="5sp" />
         </LinearLayout>
         <LinearLayout
             android:id="@+id/ad_choices_container"
@@ -58,7 +60,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:padding="5dp">
+        android:padding="2dp">
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -71,7 +73,7 @@
                 android:ellipsize="end"
                 android:lines="1"
                 android:textColor="@android:color/darker_gray"
-                android:textSize="12sp" />
+                android:textSize="5sp" />
             <TextView
                 android:id="@+id/native_ad_body"
                 android:layout_width="match_parent"
@@ -80,7 +82,7 @@
                 android:gravity="center_vertical"
                 android:lines="2"
                 android:textColor="@android:color/black"
-                android:textSize="12sp" />
+                android:textSize="5sp" />
         </LinearLayout>
 
         <Button
